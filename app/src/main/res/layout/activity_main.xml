@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:scrollbars="vertical">
+
+    <!-- Campo de texto para busca -->
+    <Button
+        android:id="@+id/startMonitoringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Monitoramento"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o termo para buscar"
+        android:inputType="text"
+        android:importantForAccessibility="yes"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:textSize="18sp"/>
+
+    <!-- Botão de pesquisa -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Botão de pesquisa"
+        android:layout_marginTop="16dp" />
+
+    <!-- ImageView para exibir a imagem -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Imagem carregada"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="yes"/>
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Baixar imagem"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Botão para baixar a imagem"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/apiStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status da API"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+    </LinearLayout>
